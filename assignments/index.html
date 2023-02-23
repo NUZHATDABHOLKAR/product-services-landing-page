@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product and services page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="text-gray-600 body-font a1 a6 hidden lg:block">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            
+            <span class="ml-3 text-xl"><img src="https://cdn.shopify.com/s/files/1/0533/0970/2320/files/logo_0f1f49e7-a20f-4bcc-ac72-4b4b796c4c92.svg?v=1631111226" alt=""></span>
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <a
+            href="https://bettervits.co.uk/pages/shop"
+            class="ml-9 text-xl no-underline hover:underline"
+            >Shop</a
+          >
+          <a
+            href="https://bettervits.co.uk/pages/about"
+            class=" ml-9 text-xl no-underline hover:underline"
+            >About us</a
+          >
+          <a
+            href="https://bettervits.co.uk/pages/faq"
+            class="ml-9 text-xl no-underline hover:underline"
+            >fAQ</a
+          >
+          <a
+            href="https://bettervits.co.uk/pages/contact"
+            class="ml-9 text-xl no-underline hover:underline"
+            >Contact</a
+          >
+          <a
+            href="https://bettervits.co.uk/tools/recurring/get-subscription-access"
+            class="ml-9  text-xl no-underline hover:underline"
+            >Log in</a
+          >
+          <a
+            href="https://bettervits.co.uk/pages/reviews"
+            class=" ml-9 text-xl no-underline hover:underline"
+            >Review</a
+          >
+          </nav>
+          <button id="cta-button" class="inline-flex items-center a3 border-0  py-3 px-6 focus:outline-none ">Shop Now
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+             <path d="M5 12h14M12 5l7 7-7 7"></path> 
+           </svg> 
+         </button>
+        </div>
+      </header>
+     <!-- only use for mobile -->
+     <div class="block md:hidden p-2 a1 flex flex-row justify-between">
+        <img src="https://cdn.shopify.com/s/files/1/0533/0970/2320/files/logo_0f1f49e7-a20f-4bcc-ac72-4b4b796c4c92.svg?v=1631111226" alt="">
+        <img onclick="togglecontent()" src="./images/burger-checklist-list-menu-navigation-svgrepo-com.svg" alt="">
+     </div>
+
+     <div class="block md:hidden a1 fixed w-full " id="hamburger-content">
+        <div class="a2 text-base font-bold flex flex-col justify-start ">
+            <a
+              href="https://bettervits.co.uk/pages/shop"
+              class="ml-9 mt-4 no-underline hover:underline"
+              >Shop</a
+            >
+            <a
+              href="https://bettervits.co.uk/pages/about"
+              class=" ml-9 no-underline hover:underline"
+              >About us</a
+            >
+            <a
+              href="https://bettervits.co.uk/pages/faq"
+              class="ml-9  no-underline hover:underline"
+              >fAQ</a
+            >
+            <a
+              href="https://bettervits.co.uk/pages/contact"
+              class="ml-9 no-underline hover:underline"
+              >Contact</a
+            >
+            <a
+              href="https://bettervits.co.uk/tools/recurring/get-subscription-access"
+              class="ml-9 no-underline hover:underline"
+              >Log in</a
+            >
+            <a
+              href="https://bettervits.co.uk/pages/reviews"
+              class=" ml-9 no-underline hover:underline"
+              >Review</a
+            >
+          </div>
+          <div>
+            <button id="cta-button" class="inline-flex items-center a3 border-0 ml-9 my-2  py-1 px-6 focus:outline-none ">Shop Now
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                 <path d="M5 12h14M12 5l7 7-7 7"></path> 
+               </svg>
+             </button>
+          </div>
+    </div>
+    <!-- hero seaction -->
+    <div class="a1">
+      <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 class="title-font sm:text-7xl text-3xl mb-4 font-medium text-gray-900">Choose
+              <br class="hidden lg:inline-block"> a <span class="a4">better</span> you
+            </h1>
+            <p class="mb-8 leading-relaxed">If you're looking to boost your health and wellness, it's important to prioritize the quality of the nutrition you consume. Rather than settling for cheap, low-quality options, you deserve better. That's why it's worth rewarding yourself with leading, locally made nutrition backed by science</p>
+            <div class="flex justify-center">
+              <button class="inline-flex  a5 border-0 py-3 px-12 focus:outline-none rounded-full"><a href="https://bettervits.co.uk/pages/shop">Shop Now</a></button>
+              <button class="ml-2 inline-flex  a5 border-0 py-3 px-12 focus:outline-none rounded-full"><a href="https://bettervits.co.uk/pages/quiz"> Quiz</a></button>
+              
+            </div>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ">
+             <img class="object-cover object-center rounded" alt="hero" src="./images/a1.png"> 
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Features section -->
+    <div class="a1">
+     <p class="a8 text-center">WHY BETTERVITS</p>
+     <h1 class="a8 text-xl text-center lg:text-6xl ">Benefits Of BetterVits</h1>
+     <div class="flex flex-col lg:flex-row mx-16 p-4   justify-around ">
+        <div class="p-6 a10  ">
+          <img  class="mx-auto" src="https://cdn.shopify.com/s/files/1/0533/0970/2320/files/why-1.svg?v=5" alt="">
+          <h1 class="text-center text-xl py-2">Clinically Studied</h1>
+          <p class="text-center py-2">We use the finest quality of natural, well-researched ingredients you can actually pronounce.</p>
+        </div>
+        <div class="p-6 a10 ">
+          <img  class="mx-auto" src="https://cdn.shopify.com/s/files/1/0533/0970/2320/files/why-2.svg?v=5" alt="">
+          <h1 class="text-center text-xl py-2">Vegetarian Friendly</h1>
+          <p class="text-center py-2">We strive to offer vegetarian friendly options across all of our products.</p>
+        </div>
+        <div class="p-6 a10">
+          <img  class="mx-auto" src="https://cdn.shopify.com/s/files/1/0533/0970/2320/files/why-3.svg?v=5" alt="">
+          <h1 class=" text-center text-xl py-2">Made in UK</h1>
+          <p class="text-center py-2">Choose supplements manufactured locally using the highest of standards.</p>
+        </div> 
+     </div>
+     <div class="flex flex-col lg:flex-row mx-16 p-4   justify-around">
+      <div class="p-6 a10 ">
+        <img  class="mx-auto" src="https://cdn.shopify.com/s/files/1/0533/0970/2320/files/why-6.svg?v=5" alt="">
+        <h1 class="text-center text-xl py-2">GMO Free</h1>
+        <p class="text-center py-2">All our formulas are free entirely of GMOs.
+        </p>
+      </div>
+      <div class="p-6 a10">
+        <img  class="mx-auto" src="https://cdn.shopify.com/s/files/1/0533/0970/2320/files/why-4.svg?v=5" alt="">
+        <h1 class="  text-center text-xl py-2">No Risk</h1>
+        <p class="text-center py-2">Rest assured with a 60 day money back guarantee on all products.</p>
+      </div>
+      <div class="p-6 a10">
+        <img  class="mx-auto" src="https://cdn.shopify.com/s/files/1/0533/0970/2320/files/why-5.svg?v=5" alt="">
+        <h1 class=" text-center text-xl py-2">Free Shipping</h1>
+        <p class="text-center py-2">Get free and fast shipping on all orders in the UK</p>
+      </div> 
+   </div>
+    </div>
+<!-- TESTIMONIALS -->
+<div class="a1">
+   <div>
+    <p class="a12 text-center font-bold">TESTIMONIALS</p>
+    <h1 class="a8 text-xl text-center lg:text-6xl lg:px-24 ">We deliver 5 star satisfaction
+      to thousands of customers</h1>
+   </div>
+
+   <section class="a8 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 md:w-1/2 w-full">
+          <div class="h-full bg-white p-8 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+              <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+            </svg>
+            <p class="leading-relaxed mb-6">
+              "You can tell the ingredients used are of great quality compared to
+              other brands. I saw quick and consistent results, customer service is
+              excellent, and the shipping is fast and free!”</p>
+            <a class="inline-flex items-center">
+              <img alt="testimonial" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQglIF2lamDsLqSak9Bqxc0GXsb5bsI_DVpHA&usqp=CAU" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+              <span class="flex-grow flex flex-col pl-4">
+                <span class="title-font font-medium text-gray-900">
+                  Christopher Layman
+              </span>
+                <span class="text-gray-500 text-sm"><img src="https://cdn.shopify.com/s/files/1/0533/0970/2320/files/stars.svg" alt=""></span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/2 w-full">
+          <div class="h-full bg-white p-8 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+              <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+            </svg>
+            <p class="leading-relaxed mb-6">
+
+              "I found this brand while looking for something to help with my joint
+              pain. I love how transparent Bettervits are, and they contribute to
+              local communities too. I now have a subscription for three of their
+              products and am very pleased with the results.”
+
+          </p>
+            <a class="inline-flex items-center">
+              <img alt="testimonial" src="https://www.tslawyers.ca/wp-content/uploads/2021/11/profile_dRobinson.jpg" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+              <span class="flex-grow flex flex-col pl-4">
+                <span class="title-font font-medium text-gray-900">
+                  Donna Robinson
+              </span>
+                <span class="text-gray-500 text-sm"><img src="https://cdn.shopify.com/s/files/1/0533/0970/2320/files/stars.svg" alt=""></span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 md:w-1/2 w-full">
+          <div class="h-full bg-white p-8 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+              <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+            </svg>
+            <p class="leading-relaxed mb-6">
+             
+             
+
+              "I suffer from allergies and have been looking for a good supplement
+              that actually works but doesn't make my allergies worse. I wish I
+              discovered Bettervits sooner because their products have massively
+              improved my mood, skin and I feel overall much healthier.”
+
+          
+          </p>
+            <a class="inline-flex items-center">
+              <img alt="testimonial" src="data:image/jpeg;base64,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" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+              <span class="flex-grow flex flex-col pl-4">
+                <span class="title-font font-medium text-gray-900">
+                  
+                  Debra Granell
+                                                    
+              </span>
+                <span class="text-gray-500 text-sm"><img src="https://cdn.shopify.com/s/files/1/0533/0970/2320/files/stars.svg" alt=""></span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/2 w-full">
+          <div class="h-full bg-white p-8 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+              <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+            </svg>
+            <p class="leading-relaxed mb-6">
+              
+
+
+              "Good quality product, with good quality ingredients. Delivery was free
+              and fast. The only supplements that work for me and have just switched
+              to a subscription.”
+
+          
+          </p>
+            <a class="inline-flex items-center">
+              <img alt="testimonial" src="data:image/jpeg;base64,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" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+              <span class="flex-grow flex flex-col pl-4">
+                <span class="title-font font-medium text-gray-900">
+                 
+                  Fred Souza
+                                                    
+              </span>
+                <span class="text-gray-500 text-sm"><img src="https://cdn.shopify.com/s/files/1/0533/0970/2320/files/stars.svg" alt=""></span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- pricing -->
+<div class="a1">
+  <section class="text-gray-600 body-font overflow-hidden">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Pricing</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.</p>
+        <div class="flex mx-auto border-2 border-emerald-800 rounded overflow-hidden mt-6">
+          <button class="py-1 px-4 a13 text-white focus:outline-none">Monthly</button>
+          <button class="py-1 px-4 focus:outline-none" onclick="search()">Annually</button>
+        </div>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+            <h2 class="text-sm tracking-widest title-font mb-1 font-medium">START</h2>
+            <h1 class="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">Free</h1>
+            <p class="flex items-center text-gray-600 mb-2">
+              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Vexillologist pitchfork
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Tumeric plaid portland
+            </p>
+            <p class="flex items-center text-gray-600 mb-6">
+              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Mixtape chillwave tumeric
+            </p>
+            <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Button
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+            <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+          </div>
+        </div>
+        <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="h-full p-6 rounded-lg border-2 border-emerald-800 flex flex-col relative overflow-hidden">
+            <span class="bg-emerald-800 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPULAR</span>
+            <h2 class="text-sm tracking-widest title-font mb-1 font-medium">PRO</h2>
+            <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+              <span>$38</span>
+              <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+            </h1>
+            <p class="flex items-center text-gray-600 mb-2">
+              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Vexillologist pitchfork
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Tumeric plaid portland
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Hexagon neutra unicorn
+            </p>
+            <p class="flex items-center text-gray-600 mb-6">
+              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Mixtape chillwave tumeric
+            </p>
+            <button class="flex items-center mt-auto text-white bg-emerald-800 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded">Button
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+            <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+          </div>
+        </div>
+        <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+            <h2 class="text-sm tracking-widest title-font mb-1 font-medium">BUSINESS</h2>
+            <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+              <span>$56</span>
+              <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+            </h1>
+            <p class="flex items-center text-gray-600 mb-2">
+              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Vexillologist pitchfork
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Tumeric plaid portland
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Hexagon neutra unicorn
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Vexillologist pitchfork
+            </p>
+            <p class="flex items-center text-gray-600 mb-6">
+              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Mixtape chillwave tumeric
+            </p>
+            <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Button
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+            <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+          </div>
+        </div>
+        <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+            <h2 class="text-sm tracking-widest title-font mb-1 font-medium">SPECIAL</h2>
+            <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+              <span>$72</span>
+              <span class="text-lg ml-1 font-normal text-gray-500">/mo</span>
+            </h1>
+            <p class="flex items-center text-gray-600 mb-2">
+              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Vexillologist pitchfork
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Tumeric plaid portland
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Hexagon neutra unicorn
+            </p>
+            <p class="flex items-center text-gray-600 mb-2">
+              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Vexillologist pitchfork
+            </p>
+            <p class="flex items-center text-gray-600 mb-6">
+              <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>Mixtape chillwave tumeric
+            </p>
+            <button class="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Button
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+            <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- cta -->
+<div class="a1">
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+      <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+        <h1 class="title-font font-medium text-3xl text-gray-900">Take Charge Of Your
+          Health Today</h1>
+        <p class="leading-relaxed mt-4">We'll send you updates to keep you well-informed of how to be the best you. Just in case you decide to leave it till tomorrow...</p>
+      </div>
+      <div class="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+        <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Sign Up</h2>
+        <div class="relative mb-4">
+          <label for="full-name" class="leading-7 text-sm text-gray-600">Full Name</label>
+          <input placeholder="please enter your name" type="text" id="full-name" name="full-name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <div class="relative mb-4">
+          <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+          <input placeholder=" enter you email" type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <button class="text-white bg-emerald-800 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Sign in</button>
+        <p class="text-xs text-gray-500 mt-3">Don't wait for someone else to prioritize your health - take charge of it yourself</p>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- footer -->
+<div>
+<footer class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg> -->
+      <span class="ml-3 text-xl"><img src="https://cdn.shopify.com/s/files/1/0533/0970/2320/files/logo_0f1f49e7-a20f-4bcc-ac72-4b4b796c4c92.svg?v=1631111226" alt=""></span>
+    </a>
+    <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2023 bettervitz —
+      <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@nddabholkar</a>
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <a class="text-gray-400">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-400">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-400">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-400">
+        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+        </svg>
+      </a>
+    </span>
+  </div>
+</footer>
+</div>
+
+</body>
+<!-- script  -->
+     <script src="./script.js"></script>
+    </body>
+</html>
